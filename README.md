@@ -1,8 +1,8 @@
-# Kohonen's Self Organizing Maps
+# Kohonen's Self-Organizing Maps
 
-The aim of this project is to test applying the method of self organizing maps to images. <br/>
-Besides that two map plots were developed in the file som_plos. Both of them were inpired in plots used by the MATLAB plots for SOM ('plotsomhits' and 'plotsomnd'). 
-The SOM implamantation used here is the [MiniSom](https://github.com/JustGlowing/minisom).
+The aim of this project is to test applying the method of self-organizing maps to images. <br/>
+Besides that, two map plots were developed in the file 'som_plos'. Both were inspired in plots used by the MATLAB plots for SOM ('plotsomhits' and 'plotsomnd'). 
+The SOM implementation used here is the [MiniSom](https://github.com/JustGlowing/minisom).
 The encoders developed in my [autoencoder](https://github.com/luizamarnet/autoencoder) repository were used here to compress the images before clusterization.
 
 ## About the Project
@@ -11,7 +11,7 @@ The models were validated using 5-folds cross-validation and all of them were te
 The models will be trained with 2 datasets: CIFAR-10 and MNIST.<br/>
 The results presented so far are preliminary and we intend to continue to improve them.<br/>
 
-As the autoencoder model was trained with 5-folds cross-validation, the 5 models will be used here. This way, the clusterization using the outpout of the encoder will be done 5 times and 5 deep clustering models will be traied. Moreover, the training part of each clusterization will be caried out with the respective subsets used in the traing of each autoendor during the cross-validation, and the same subset of images will be used as test dataset. Hence, the tests realized and the comparison between the models are fair.
+As the autoencoder model was trained with 5-folds cross-validation, the 5 models will be used here. This way, the clusterization using the output of the encoder will be done 5 times and 5 deep clustering models will be trained. Moreover, the training part of each clusterization will be caried out with the respective subsets used in the training of each autoencodor during the cross-validation, and the same subset of images will be used as test dataset. Hence, the tests realized and the comparison between the models are fair.
 
 ## About SOM Chosen Parameters and Hyperparameters
 According to MiniSom documentation, a good choice for the number of neurons in the map is 5\*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>

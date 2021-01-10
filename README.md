@@ -33,7 +33,7 @@ In this first plot we can see what was the majority class of the samples that ac
 
 <img src="https://user-images.githubusercontent.com/58445878/104128994-51801a80-5349-11eb-8996-40c825234f6a.jpg" width="500"> 
 
-In the image below, the plots show the neuros activations per class. The blue hexagons size are proportional to the number of samples that activated each neuron. While looking at these plots is important to keep in mind that the blue hexagons size are normalized by the number of activation in each plot and not by the number of activation in the hole set of plots. <br/>
+In the image below, the plots show the neuros activations per class. The blue hexagons size is proportional to the number of samples that activated each neuron. While looking at these plots is important to keep in mind that the blue hexagons size are normalized by the number of activation in each plot and not by the number of activation in the hole set of plots. <br/>
  
 <img src="https://user-images.githubusercontent.com/58445878/104129149-34981700-534a-11eb-9a61-446d4cff9cdf.jpg" width="1000">
 

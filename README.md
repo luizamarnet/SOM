@@ -12,16 +12,12 @@ The results presented so far are preliminary and we intend to continue to improv
 
 As the autoencoder model was trained with 5-folds cross-validation, the 5 models will be used here. This way, the clusterization using the outpout of the encoder will be done 5 times and 5 deep clustering models will be traied. Moreover, the training part of each clusterization will be caried out with the respective subsets used in the traing of each autoendor during the cross-validation, and the same subset of images will be used as test dataset. Hence, the tests realized and the comparison between the models are fair.
 
-## About SOM Chosen Parameters
+## About SOM Chosen Parameters and Hyperparameters
 According to MiniSom documentation, a good choice for the number of neurons in the map is 5\*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>
 As claimed by Haykin, in his book __'Neural Networks: A Comprehensive Foundation'__, during SOM's training there are two phases, the ordering phase and the convergence phase. The ordering phase is when occurs the topological ordering of the map. During the convergence phase a fine tuning of maps weights takes place.<br/>
-Haykin says that the ordering phase should last at least 1000 iterations and that the convergence phase should last 500\*(number of neuron in the map) iterations or more. 
-
-The clustering layer used was developed by Chengwei Zhang and copied from his public repository ([Keras_Deep_Clustering](https://github.com/Tony607/Keras_Deep_Clustering)). The 'metrics.py' code, used during training also was downloaded from the Zhang's repository.<br/>
-The encoder used in the deep clustering model trained with the MNIST dataset was the one trained with the same dataset in the project from my respository ([autoencoder](https://github.com/luizamarnet/autoencoder)). The outpout of this encoder is an array of size 10x1.<br/>
-As expalined by [Chengwei Zhang](https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/), the clustering layer calculates the probability that each sample belongs to each cluster using  student's t-distribution. To do this, the weights that connect the clustering layer with the encoder output layer are used as center clusters. <br/>
-Also, the labels used while training the deep clustering are updated after some iterations, updating the target distribution. For this reason the model is called self supervised.<br/>
-
+Haykin says that the ordering phase should last at least 1000 iterations and that the convergence phase should last 500\*(number of neuron in the map) iterations or more. He also states that the learning rate should start the training with a value close to 0.1 and be in the order of 0.01 during the convergence phase. As for the neighborhood, he says that it should start covering almost all neurons in the map and be reduced to 1 or no neuron in the convergence phase.<br/>
+The learning rate and the neighborhood are controlled by the same rate decay in MiniSom. Because of it, it is difficult to meet both recommendations of Haykin about these hyperparameters. <br/>
+More tests were done on the choice of parameters and hyperparameters for training with MNIST dataset than with CIFAR-10 dataset. After many tests, the parameters and hyperparameters that lead to a clearer neurons distance map for MNIST were chosen. For a first test, the same values were used during the training of SOM with CIFAR-10. However, better values must be found.<br/>
 
 ## Results
 

@@ -43,7 +43,14 @@ Lastly, the next plot show the distance between neurons in the map. Each black h
 
 Considering each neuron as a cluster,  the clusterization purity is equal to 0.92120 and the Shannon's entropy is equal to 0.32130. <br/>
 
-After that, we trained maps with the encoded imagens. The plots below are from one of the five SOMs trained with the outputs of the encoders. <br/>
+After that, we trained SOM maps with the encoded imagens. The plots below are from one of the five SOMs trained with the outputs of the encoders. <br/>
+Considering the resultds of the 5 self organizing maps trained, the mean purity was equal to 0.95974 with standar deviation equal to 0.00113. And the Shannon's entropy is equal to 0.16495, with standard deviation equal to 0.00476<br/>
+
+<img src="https://user-images.githubusercontent.com/58445878/104131356-9f4e5000-5354-11eb-990f-7fa1bb36ed4e.jpg" width="500">
+
+<img src="https://user-images.githubusercontent.com/58445878/104131358-a1b0aa00-5354-11eb-98e8-44fa37e36470.jpg" width="1000">
+
+<img src="https://user-images.githubusercontent.com/58445878/104131368-a7a68b00-5354-11eb-9bdc-f42c5dedd8c0.jpg" width="500">
 
 
 ## Steps Concluded and Future Works

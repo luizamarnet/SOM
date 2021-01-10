@@ -31,7 +31,7 @@ The known labels of each sample were not used in any part of the training, but t
 Before training the maps with the encoders outputs, we tested training one SOM with the flattened images. Below are three kinds of plots that can be analysed.  
 In this first plot we can see what was the majoruty class that activated each neuron. If the neuron was not activated by any sample, no anotation was made inside of it.<br/>
 
-<img src="https://user-images.githubusercontent.com/58445878/104128994-51801a80-5349-11eb-8996-40c825234f6a.jpg" width="500">
+<img src="https://user-images.githubusercontent.com/58445878/104128994-51801a80-5349-11eb-8996-40c825234f6a.jpg" width="500"> 
 
 In the image below, the plots show the neuros activations per class. The blue hexagons size are proportional to the number of samples that activated each neuron. While looking at these plots is important to keep in mind that the blue hexagons size are normalized by the number of activation in each plot and not by the number of activation in the hole set of plots. <br/>
  
@@ -39,7 +39,7 @@ In the image below, the plots show the neuros activations per class. The blue he
 
 Lastly, the next plot shows the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron representes the euclidian distance between them. The clearest color represents the more similar neuros and the darkest color represents the more distante neurons. Remebmering that when we talk about close or distant neurons we are talking about how similar the neurons weights are. <br/>
 
-<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="500">
+<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="500"/> <img src="https://user-images.githubusercontent.com/58445878/104136966-37116580-5378-11eb-94e4-752c332cf675.jpg" width="500"/>
 
 Considering each neuron as a cluster,  the clusterization purity is equal to 0.92120 and the Shannon's entropy is equal to 0.32130. <br/>
 

@@ -65,12 +65,12 @@ We trained SOM maps with the encoded CIFAR-10 imagens. The plots below are from 
 
 <img src="https://user-images.githubusercontent.com/58445878/104132141-3669d680-535a-11eb-98bd-8ab7dd50f793.jpg" width="500">
 
-Considering the results of the 5 self-organizing maps trained, the mean purity was equal to 0.42812 with standar deviation equal to 0.00246. And the Shannon's entropy is equal to 2.10176, with standard deviation equal to 0.01177<br/>
+Considering the results of the 5 self-organizing maps trained, the mean purity was equal to 0.42812 with standard deviation equal to 0.00246. And the Shannon's entropy is equal to 2.10176, with standard deviation equal to 0.01177<br/>
 
 
 ## Comments
 
-As we see in the results, the purity for the MNIST clustering was very high. Also, the looking at the distance map plot for the clusterization using the encoded MNIST imagens, it is possible to identify the regions were the neurons are closer (where are the clusters) separeted by resions of more distant neurons. <br/>
-For the CIFAR-10 dataset, it is possible to see in the hit maps that the model is traying to put the samples of the same class together. But theses results need to be highly improved, since the samples of different classes still mixed in the map. Also, the purity for this clustering is low. <br/>
+As we see in the results, the purity for the MNIST clustering was extremely high. Also, the looking at the distance map plot for the clusterization using the encoded MNIST imagens, it is possible to identify the regions where the neurons are closer (where are the clusters) separated by regions of more distant neurons. <br/>
+For the CIFAR-10 dataset, it is possible to see in the hit maps that the model is traying to put the samples of the same class together. But these results need to be highly improved, since the samples of different classes still mixed in the map. Also, the purity for this clustering is low. <br/>
 The values for the parameters and hyperparameters need to be further investigated. <br/>
-Maybe, one solution for getting better results would be adapt MiniSom adapt the minisom algorithm so that the learning rate decay and the neighborhood decay are controlled by different rates. <br/>
+Perhaps a solution for getting better results would be to adapt the MiniSom algorithm so that the learning rate decay and the neighborhood decay are controlled by different rates. <br/>

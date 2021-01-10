@@ -2,7 +2,7 @@
 
 The aim of this project is to test the method of self-organizing maps to images. <br/>
 Besides that, two map plots were developed in the file 'som_plos'. Both were inspired in plots used by the MATLAB plots for SOM ('plotsomhits' and 'plotsomnd'). <br/>
-The SOM implementation used here is the [MiniSom](https://github.com/JustGlowing/minisom).<br/>
+The SOM implementation used is the [MiniSom](https://github.com/JustGlowing/minisom).<br/>
 The encoders developed in my [autoencoder](https://github.com/luizamarnet/autoencoder) repository were used to compress the images before clusterization.<br/>
 
 ## About the Project

@@ -35,7 +35,7 @@ In this first plot we can see what was the majoruty class that activated each ne
 
 In the image below, the plots show the neuros activations per class. The blue hexagons size are proportional to the number of samples that activated each neuron. While looking at these plots is important to keep in mind that the blue hexagons size are normalized by the number of activation in each plot and not by the number of activation in the hole set of plots. <br/>
  
-<img src="https://user-images.githubusercontent.com/58445878/104129149-34981700-534a-11eb-9a61-446d4cff9cdf.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/58445878/104129149-34981700-534a-11eb-9a61-446d4cff9cdf.jpg" width="900">
 
 Lastly, the next plot show the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron representes the euclidian distance between them. The clearest color represents the more similar neuros and the darkest color represents the more distante neurons. Remebmering that when we talk about close or distant neurons we are talking about how similar the neurons weights are. <br/>
 

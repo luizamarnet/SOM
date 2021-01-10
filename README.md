@@ -37,14 +37,13 @@ In the image below, the plots show the neuros activations per class. The blue he
  
 <img src="https://user-images.githubusercontent.com/58445878/104129149-34981700-534a-11eb-9a61-446d4cff9cdf.jpg" width="1000">
 
-Lastly, the next plot show the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron representes the euclidian distance between them. The clearest color represents the more similar neuros and the darkest color represents the more distante neurons. Remebmering that when we talk about close or distant neurons we are talking about how similar the neurons weights are. <br/>
+Lastly, the next plot shows the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron representes the euclidian distance between them. The clearest color represents the more similar neuros and the darkest color represents the more distante neurons. Remebmering that when we talk about close or distant neurons we are talking about how similar the neurons weights are. <br/>
 
 <img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="500">
 
 Considering each neuron as a cluster,  the clusterization purity is equal to 0.92120 and the Shannon's entropy is equal to 0.32130. <br/>
 
 After that, we trained SOM maps with the encoded imagens. The plots below are from one of the five SOMs trained with the outputs of the encoders. <br/>
-Considering the resultds of the 5 self organizing maps trained, the mean purity was equal to 0.95974 with standar deviation equal to 0.00113. And the Shannon's entropy is equal to 0.16495, with standard deviation equal to 0.00476<br/>
 
 <img src="https://user-images.githubusercontent.com/58445878/104131356-9f4e5000-5354-11eb-990f-7fa1bb36ed4e.jpg" width="500">
 
@@ -52,6 +51,9 @@ Considering the resultds of the 5 self organizing maps trained, the mean purity 
 
 <img src="https://user-images.githubusercontent.com/58445878/104131368-a7a68b00-5354-11eb-9bdc-f42c5dedd8c0.jpg" width="500">
 
+Considering the resultds of the 5 self organizing maps trained, the mean purity was equal to 0.95974 with standar deviation equal to 0.00113. And the Shannon's entropy is equal to 0.16495, with standard deviation equal to 0.00476<br/>
+
+### CIFAR-10 Dataset
 
 ## Steps Concluded and Future Works
 

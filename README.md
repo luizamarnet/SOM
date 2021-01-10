@@ -1,6 +1,6 @@
-# Kohonen's Self Organizing Models
+# Kohonen's Self Organizing Maps
 
-The aim of this project is to test applying the method of self organizing methos to images. <br/>
+The aim of this project is to test applying the method of self organizing maps to images. <br/>
 Besides that two map plots were developed in the file som_plos. Both of them were inpired in plots used by the MATLAB plots for SOM ('plotsomhits' and 'plotsomnd'). 
 The SOM implamantation used here is the [MiniSom](https://github.com/JustGlowing/minisom).
 

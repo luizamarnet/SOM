@@ -23,13 +23,13 @@ More tests were done on the choice of parameters and hyperparameters for trainin
 ## Results
 
 Below we present some results that were find in this project.<br/>
-For both the MNIST and the CIFAR-10 dataset, the autoencoders developed in the [autoencoder](https://github.com/luizamarnet/autoencoder) project were validated with 5-folds cross-validation. Because of it, 5 encoders were developed for each of tehse dataset. Here, we trained one SOM for each encoders output, resulting in five self organizing maps for MNIST and five for CIFAR-10.<br/>
+For both the MNIST and the CIFAR-10 dataset, the autoencoders developed in the [autoencoder](https://github.com/luizamarnet/autoencoder) project were validated with 5-folds cross-validation. Because of it, 5 encoders were developed for each of these datasets. Here, we trained one SOM for each encoders output, resulting in five self-organizing maps for MNIST and five for CIFAR-10.<br/>
 The known labels of each sample were not used in any part of the training, but they were used to analyse the maps trained and to analyze with the maps were ordered according to the different classes.<br/>
 
 ### MNIST Dataset
 
-Before training the maps with the encoders outputs, we tested training one SOM with the flattened images. Below are three kinds of plots that can be analysed.  
-In this first plot we can see what was the majority class of the samples that activated each neuron. If the neuron was not activated by any sample, no anotation was made inside of it.<br/>
+Before training the maps with the encoders' outputs, we tested training one SOM with the flattened images. Below are three kinds of plots that can be analyzed.  
+In this first plot we can see what was the majority class of the samples that activated each neuron. If the neuron was not activated by any sample, no annotation was made inside of it.<br/>
 
 <img src="https://user-images.githubusercontent.com/58445878/104128994-51801a80-5349-11eb-8996-40c825234f6a.jpg" width="500"> 
 

@@ -65,7 +65,7 @@ We trained SOM maps with the encoded CIFAR-10 imagens. The plots below are from 
 
 <img src="https://user-images.githubusercontent.com/58445878/104132141-3669d680-535a-11eb-98bd-8ab7dd50f793.jpg" width="500">
 
-Considering the resultds of the 5 self organizing maps trained, the mean purity was equal to 0.42812 with standar deviation equal to 0.00246. And the Shannon's entropy is equal to 2.10176, with standard deviation equal to 0.01177<br/>
+Considering the results of the 5 self-organizing maps trained, the mean purity was equal to 0.42812 with standar deviation equal to 0.00246. And the Shannon's entropy is equal to 2.10176, with standard deviation equal to 0.01177<br/>
 
 
 ## Comments

@@ -1,21 +1,22 @@
-# Deep Clustering Project
+# Kohonen's Self Organizing Models
 
-The aim of this project is to cluter imagens using deep models. <br/>
-The models trained in the [autoencoder](https://github.com/luizamarnet/autoencoder) repository will be used in this project.
+The aim of this project is to test applying the method of self organizing methos to images. <br/>
+Besides that two map plots were developed in the file som_plos. Both of them were inpired in plots used by the MATLAB plots for SOM ('plotsomhits' and 'plotsomnd'). 
+The SOM implamantation used here is the [MiniSom](https://github.com/JustGlowing/minisom).
 
 ## About the Project
 
-The models were developed in Python using Keras.<br/>
 The models were validated using 5-folds cross-validation and all of them were tested on the same dataset.<br/>
 The models will be trained with 2 datasets: CIFAR-10 and MNIST.<br/>
-For each dataset three steps will be carried out.
-* The images will be flattened and clusterized using k-means;
-* Each image will be inserted into the encoder derived from the autoendores of the other project. And the output of the encoder will be clustered using k-means. <br/>
-* A clustering layer will be placed on the top of the encoder model and the new model will be trained as a self supervised model. This is the deep clusterinig model that we want to train. <br/>
+The results presented so far are preliminary and we intend to continue to improve them.<br/>
 
 As the autoencoder model was trained with 5-folds cross-validation, the 5 models will be used here. This way, the clusterization using the outpout of the encoder will be done 5 times and 5 deep clustering models will be traied. Moreover, the training part of each clusterization will be caried out with the respective subsets used in the traing of each autoendor during the cross-validation, and the same subset of images will be used as test dataset. Hence, the tests realized and the comparison between the models are fair.
 
-## About the Deep Clustering Model
+## About SOM Chosen Parameters
+According to MiniSom documentation, a good choice for the number of neurons in the map is 5*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>
+As claimed by Haykin, in his book __'Neural Networks: A Comprehensive Foundation'__, during SOM's training there are two phases, the ordering phase and the convergence phase. The ordering phase is when occurs the topological ordering of the map. During the convergence phase a fine tuning of maps weights takes place.<br/>
+Haykin says that the ordering phase should last at least 1000 iterations and that the convergence phase should last 500*(number of neuron in the map) iterations or more. 
+
 The clustering layer used was developed by Chengwei Zhang and copied from his public repository ([Keras_Deep_Clustering](https://github.com/Tony607/Keras_Deep_Clustering)). The 'metrics.py' code, used during training also was downloaded from the Zhang's repository.<br/>
 The encoder used in the deep clustering model trained with the MNIST dataset was the one trained with the same dataset in the project from my respository ([autoencoder](https://github.com/luizamarnet/autoencoder)). The outpout of this encoder is an array of size 10x1.<br/>
 As expalined by [Chengwei Zhang](https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/), the clustering layer calculates the probability that each sample belongs to each cluster using  student's t-distribution. To do this, the weights that connect the clustering layer with the encoder output layer are used as center clusters. <br/>

@@ -13,9 +13,9 @@ The results presented so far are preliminary and we intend to continue to improv
 As the autoencoder model was trained with 5-folds cross-validation, the 5 models will be used here. This way, the clusterization using the outpout of the encoder will be done 5 times and 5 deep clustering models will be traied. Moreover, the training part of each clusterization will be caried out with the respective subsets used in the traing of each autoendor during the cross-validation, and the same subset of images will be used as test dataset. Hence, the tests realized and the comparison between the models are fair.
 
 ## About SOM Chosen Parameters
-According to MiniSom documentation, a good choice for the number of neurons in the map is 5*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>
+According to MiniSom documentation, a good choice for the number of neurons in the map is 5\*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>
 As claimed by Haykin, in his book __'Neural Networks: A Comprehensive Foundation'__, during SOM's training there are two phases, the ordering phase and the convergence phase. The ordering phase is when occurs the topological ordering of the map. During the convergence phase a fine tuning of maps weights takes place.<br/>
-Haykin says that the ordering phase should last at least 1000 iterations and that the convergence phase should last 500*(number of neuron in the map) iterations or more. 
+Haykin says that the ordering phase should last at least 1000 iterations and that the convergence phase should last 500\*(number of neuron in the map) iterations or more. 
 
 The clustering layer used was developed by Chengwei Zhang and copied from his public repository ([Keras_Deep_Clustering](https://github.com/Tony607/Keras_Deep_Clustering)). The 'metrics.py' code, used during training also was downloaded from the Zhang's repository.<br/>
 The encoder used in the deep clustering model trained with the MNIST dataset was the one trained with the same dataset in the project from my respository ([autoencoder](https://github.com/luizamarnet/autoencoder)). The outpout of this encoder is an array of size 10x1.<br/>

@@ -56,17 +56,20 @@ Considering the resultds of the 5 self organizing maps trained, the mean purity 
 
 ### CIFAR-10 Dataset
 
-## Steps Concluded and Future Works
+We trained SOM maps with the encoded CIFAR-10 imagens. The plots below are from one of the five SOMs trained with the outputs of the encoders.
 
-- [x] To cluster the MNIST dataset flattening the images and applying k-means;
-- [x] To compress the MNIST dataset images using the encoders trained and to cluster their outputs applying k-means;
-- [x] To trai the deep clustering model using the MNIST dataset;
-- [ ] To cluster the CIFAR-10 dataset flattening the images and applying k-means;
-- [ ] To compress the CIFAR-10 dataset images using the encoders trained and to cluster the outputs applying k-means;
-- [ ] To train the deep clustering model using the CIFAR-10 dataset.
+<img src="https://user-images.githubusercontent.com/58445878/104132136-2fdb5f00-535a-11eb-8f1f-8c50159b6074.jpg" width="500">
+
+<img src="https://user-images.githubusercontent.com/58445878/104132137-32d64f80-535a-11eb-95eb-ce2c76b1d868.jpg" width="1000">
+
+<img src="https://user-images.githubusercontent.com/58445878/104132141-3669d680-535a-11eb-98bd-8ab7dd50f793.jpg" width="500">
+
+Considering the resultds of the 5 self organizing maps trained, the mean purity was equal to 0.42812 with standar deviation equal to 0.00246. And the Shannon's entropy is equal to 2.10176, with standard deviation equal to 0.01177<br/>
 
 
 ## Comments
 
-As we see in the results, the deep clustering model huge improved the results of the clusterization of the MNIST dataset when comparing with the other two clusterizations. <br/>
-Nevertheless, the models perfomed better in the deep clustering models trained with some of the pre trained encoders and get confused between some numbers in others. Maybe, improving the results of the autoencoders from which the encoders were taken could solve this problem.
+As we see in the results, the purity for the MNIST clustering was very high. Also, the looking at the distance map plot for the clusterization using the encoded MNIST imagens, it is possible to identify the regions were the neurons are closer (where are the clusters) separeted by resions of more distant neurons.
+For the CIFAR-10 dataset, it is possible to see in the hit maps that the model is traying to put the samples of the same class together. But theses results need to be highly improved, since the samples of different classes still mixed in the map. Also, the purity for this clustering is low. 
+The values for the parameters and hyperparameters need to be further investigated. 
+Maybe, one solution for getting better results would be adapt MiniSom adapt the minisom algorithm so that the learning rate decay and the neighborhood decay are controlled by different rates.

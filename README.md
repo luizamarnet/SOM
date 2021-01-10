@@ -3,6 +3,7 @@
 The aim of this project is to test applying the method of self organizing maps to images. <br/>
 Besides that two map plots were developed in the file som_plos. Both of them were inpired in plots used by the MATLAB plots for SOM ('plotsomhits' and 'plotsomnd'). 
 The SOM implamantation used here is the [MiniSom](https://github.com/JustGlowing/minisom).
+The encoders developed in my [autoencoder](https://github.com/luizamarnet/autoencoder) repository were used here to compress the images before clusterization.
 
 ## About the Project
 
@@ -21,24 +22,29 @@ More tests were done on the choice of parameters and hyperparameters for trainin
 
 ## Results
 
-Up to now, only the MNIST dataset was used in this project. The results obtained until now are presented below.<br/>
-Although the true labels of the classes are not used during any part of the training, once it is a cluserization problem, they are used to avaliate the results and analyse if the models are able to separete the clusters according to the known classes. <br/>
-The confusion matrix above shows the true labels against the clusterization resulted from flattening the image and apply k-means. Considering the class of each clustering as the majority class of the cluster, the accuracy obtained for the test dataset was: 59.41000 %.
+Below we present some results that were find in this project.<br/>
+For both the MNIST and the CIFAR-10 dataset, the autoencoders developed in the [autoencoder](https://github.com/luizamarnet/autoencoder) project were validated with 5-folds cross-validation. Because of it, 5 encoders were developed for each of tehse dataset. Here, we trained one SOM for each encoders output, resulting in five self organizing maps for MNIST and five for CIFAR-10.<br/>
+The known labels of each sample were not used in any part of the training, but they were used to analyse the maps trained and to analyze with the maps were ordered according to the different classes.<br/>
 
-<img src="https://user-images.githubusercontent.com/58445878/103501716-cd500380-4e2d-11eb-8139-65201d731444.jpg" width="600">
+### MNIST Dataset
 
-Next, using the outputs of the encoder and clusterizing then, the result were improved. Remembering that, since we used 5-folds cross-validation while training the autoencoders, the same respective 5 encoders were used here. This way, the new accuracy for the clusterization, testing the five encoders, was 87.22600 % with standard deviation equal to 3.13242 %. The two confusion matrix below show the results of the clusterization of the outputs of 2 of the 5 encoders.
+Before training the maps with the encoders outputs, we tested training one SOM with the flattened images. Below are three kinds of plots that can be analysed.  
+In this first plot we can see what was the majoruty class that activated each neuron. If the neuron was not activated by any sample, no anotation was made inside of it.
 
-<img src="https://user-images.githubusercontent.com/58445878/103501970-94fcf500-4e2e-11eb-8c87-a1cad7d894b7.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/58445878/104128994-51801a80-5349-11eb-8996-40c825234f6a.jpg" width="600">
 
-<img src="https://user-images.githubusercontent.com/58445878/103502006-acd47900-4e2e-11eb-9004-22be10bf261e.jpg" width="600">
+In the image below, the plots show the neuros activations per class. The blue
+ hexagons size are proportional to the number of samples that activated each neuron. While looking at these plots is important to keep in mind that the blue hexagons size are normalized by the number of activation in each plot and not by the number of activation in the hole set of plots.
+ 
+<img src="https://user-images.githubusercontent.com/58445878/104129149-34981700-534a-11eb-9a61-446d4cff9cdf.jpg" width="600">
 
-Last, also considering the 5-folds cross-validation while traing the deep clustering models, the accuracy for the clusterization with the deep model was 93.47000 %, with standard deviation equal to 4.35613 %. The confusion matrix below show the results founded when training the deep clustering model with 2 of the 5 pretrained encoders.
+Lastly, the next plot show the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron representes the euclidian distance between them. The clearest color represents the more similar neuros and the darkest color represents the more distante neurons. Remebmering that when we talk about close or distant neurons we are talking about how similar the neurons weights are.
 
+<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="600">
 
-<img src="https://user-images.githubusercontent.com/58445878/103502142-12286a00-4e2f-11eb-8614-cbfa0cc44f8c.jpg" width="600">
+Considering each neuron as a cluster, the purity of this clusterization is equal to and the Shannon's entropy is equal to
 
-<img src="https://user-images.githubusercontent.com/58445878/103502146-15235a80-4e2f-11eb-88a7-30b4064040c5.png" width="600">
+After that, we trained maps with the encoded imagens. The plots below are from one of the five SOM trained with the outputs of the encoders.
 
 
 ## Steps Concluded and Future Works

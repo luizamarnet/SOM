@@ -22,7 +22,7 @@ More tests were done on the choice of parameters and hyperparameters for trainin
 
 Below we present some results that were find in this project.<br/>
 For both the MNIST and the CIFAR-10 datasets, the autoencoders developed in the [autoencoder](https://github.com/luizamarnet/autoencoder) project were validated with 5-folds cross-validation. Because of it, 5 encoders were developed for each of these datasets. Here, we trained one SOM for each encoders' output, resulting in five self-organizing maps for MNIST and five for CIFAR-10.<br/>
-The known labels of each sample were not used in any part of the training, but they were used to analyse the maps trained and to analyze with the maps were ordered according to the different classes.<br/>
+The known labels of each sample were not used in any part of the training, however they were used to analyze the quality of the trained maps, including to analyze whether the maps were ordered according to the different classes.<br/>
 
 ### MNIST Dataset
 

@@ -12,7 +12,7 @@ The models will be trained with 2 datasets: CIFAR-10 and MNIST.<br/>
 The results presented so far are preliminary and we intend to continue to improve them.<br/>
 
 ## About SOM Chosen Parameters and Hyperparameters
-According to MiniSom documentation, a good choice for the number of neurons in the map is 5\*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>
+According to MiniSom documentation, a good choice for the number of neurons in the map is 5\*sqrt(N), where N is the number of samples in the dataset to analyze.<br/>
 As claimed by Haykin, in his book __'Neural Networks: A Comprehensive Foundation'__, during SOM's training there are two phases, the ordering phase and the convergence phase. The ordering phase is when occurs the topological ordering of the map. During the convergence phase a fine tuning of maps weights takes place.<br/>
 Haykin says that the ordering phase should last at least 1000 iterations and that the convergence phase should last 500\*(number of neurons in the map) iterations or more. He also states that the learning rate should start the training with a value close to 0.1 and be in the order of 0.01 during the convergence phase. As for the neighborhood, he says that it should start covering almost all neurons in the map and be reduced to 1 or no neuron in the convergence phase.<br/>
 The learning rate and the neighborhood are controlled by the same rate decay in MiniSom. Because of it, it is difficult to meet both recommendations of Haykin about these hyperparameters. <br/>

@@ -37,7 +37,7 @@ In the image below, the plots show the neurons' activations per class. The blue 
 
 Lastly, the plot below on the left shows the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron represents the Euclidean distance between them. The lightest color represents the more similar neurons, and the darkest color represents the more distant neurons. Remembering that when we talk about near and far neurons, we are talking about how similar the neurons weights are. The plot below on the right is the same as the plot on the left, but with the clusters drawn according to groups of neurons of the same class that are next to each other. We are considering the class of the neuron as the majority class of the samples that activated each neuron, as in the 'Map of Neurons Classes' above. <br/>
 
-<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="450"/> <img src="https://user-images.githubusercontent.com/58445878/104136966-37116580-5378-11eb-94e4-752c332cf675.jpg" width="450"/>
+<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="410"/> <img src="https://user-images.githubusercontent.com/58445878/104136966-37116580-5378-11eb-94e4-752c332cf675.jpg" width="410"/>
 
 Considering each neuron as a cluster,  the clusterization purity is equal to 0.92120 and the Shannon's entropy is equal to 0.32130. <br/>
 
@@ -65,7 +65,7 @@ We trained SOM maps with the encoded CIFAR-10 imagens. The plots below are from 
 
 <img src="https://user-images.githubusercontent.com/58445878/104132137-32d64f80-535a-11eb-95eb-ce2c76b1d868.jpg" width="1000">
 
-<img src="https://user-images.githubusercontent.com/58445878/104132141-3669d680-535a-11eb-98bd-8ab7dd50f793.jpg" width="450">
+<img src="https://user-images.githubusercontent.com/58445878/104132141-3669d680-535a-11eb-98bd-8ab7dd50f793.jpg" width="410">
 
 Considering the results of the 5 self-organizing maps trained, the mean purity was equal to 0.42812 with standard deviation equal to 0.00246. And the Shannon's entropy is equal to 2.10176, with standard deviation equal to 0.01177<br/>
 

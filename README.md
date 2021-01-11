@@ -11,8 +11,6 @@ The models were validated using 5-folds cross-validation and all of them were te
 The models will be trained with 2 datasets: CIFAR-10 and MNIST.<br/>
 The results presented so far are preliminary and we intend to continue to improve them.<br/>
 
-As the autoencoder model was trained with 5-folds cross-validation, the 5 models will be used here. This way, the clusterization using the output of the encoder will be done 5 times and 5 deep clustering models will be trained. Moreover, the training part of each clusterization will be carried out with the respective subsets used in the training of each autoencodor during the cross-validation, and the same subset of images will be used as test dataset. Hence, the tests realized and the comparison between the models are fair.
-
 ## About SOM Chosen Parameters and Hyperparameters
 According to MiniSom documentation, a good choice for the number of neurons in the map is 5\*sqrt(N) is neurons, where N is the number of samples in the dataset to analyze.<br/>
 As claimed by Haykin, in his book __'Neural Networks: A Comprehensive Foundation'__, during SOM's training there are two phases, the ordering phase and the convergence phase. The ordering phase is when occurs the topological ordering of the map. During the convergence phase a fine tuning of maps weights takes place.<br/>

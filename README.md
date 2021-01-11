@@ -69,6 +69,6 @@ Considering the results of the 5 self-organizing maps trained, the mean purity w
 ## Comments
 
 As we see in the results, the purity for the MNIST clustering was extremely high. Also, looking at the neuron distance map plot for the clusterization using the encoded MNIST imagens, it is possible to identify the regions where the neurons are closer (where are the clusters) separated by regions of more distant neurons. <br/>
-For the CIFAR-10 dataset, it is possible to see on the hit maps that the model is trying to put the samples of the same classes together. But these results need to be highly improved, since the samples of different classes still mixed in the map. Also, the purity for this clustering is low. <br/>
+For the CIFAR-10 dataset, it is possible to see on the hit maps that the model is trying to put the samples of the same classes together. But these results need to be highly improved, since the samples of different classes still mixed on the map. Also, the purity for this clustering is low. <br/>
 The values for the parameters and hyperparameters need to be further investigated. <br/>
 Perhaps a solution for getting better results would be to adapt the MiniSom algorithm so that the learning rate decay and the neighborhood decay are controlled by different rates. <br/>

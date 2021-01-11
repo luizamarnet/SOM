@@ -37,7 +37,7 @@ In the image below, the plots show the neurons' activations per class. The blue 
 
 Lastly, the plot below on the left shows the distance between neurons in the map. Each black hexagon represents one neuron and the color between each neuron represents the Euclidean distance between them. The lightest color represents the more similar neurons, and the darkest color represents the more distant neurons. Remembering that when we talk about near and far neurons, we are talking about how similar the neurons weights are. The plot below on the right is the same as the plot on the left, but with the clusters drawn according to groups of neurons of the same class that are next to each other. We are considering the class of the neuron as the majority class of the samples that activated each neuron, as in the 'Map of Neurons Classes' above. <br/>
 
-<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="400"/> <img src="https://user-images.githubusercontent.com/58445878/104136966-37116580-5378-11eb-94e4-752c332cf675.jpg" width="400"/>
+<img src="https://user-images.githubusercontent.com/58445878/104129357-d7509580-534a-11eb-951f-f46d493ea2fd.jpg" width="450"/> <img src="https://user-images.githubusercontent.com/58445878/104136966-37116580-5378-11eb-94e4-752c332cf675.jpg" width="450"/>
 
 Considering each neuron as a cluster,  the clusterization purity is equal to 0.92120 and the Shannon's entropy is equal to 0.32130. <br/>
 
@@ -47,7 +47,7 @@ After that, we trained SOM maps with the encoded imagens. The plots below are fr
 
 <img src="https://user-images.githubusercontent.com/58445878/104131497-711d4000-5355-11eb-9f49-9be04dde89ed.jpg" width="1000">
 
-<img src="https://user-images.githubusercontent.com/58445878/104131503-75e1f400-5355-11eb-9c12-7d7d173e04dd.jpg" width="400"/> <img src="https://user-images.githubusercontent.com/58445878/104137056-c585e700-5378-11eb-8417-a65893377e3c.jpg" width="400"/>
+<img src="https://user-images.githubusercontent.com/58445878/104131503-75e1f400-5355-11eb-9c12-7d7d173e04dd.jpg" width="450"/> <img src="https://user-images.githubusercontent.com/58445878/104137056-c585e700-5378-11eb-8417-a65893377e3c.jpg" width="450"/>
 
 As we can see, when comparing the two neuron distance maps above, the second map, representing the SOM trained with the encoded imagens, is better organized. In this second map, the division between the clusters is easier to visualize and the number of clusters better correnponds to the number of known classes (10 classes).
 

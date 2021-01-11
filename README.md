@@ -51,8 +51,8 @@ After that, we trained SOM maps with the encoded imagens. The plots below are fr
 <img src="https://user-images.githubusercontent.com/58445878/104131497-711d4000-5355-11eb-9f49-9be04dde89ed.jpg" width="1000">
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/58445878/104131503-75e1f400-5355-11eb-9c12-7d7d173e04dd.jpg" width="420" /> 
-  <img src="https://user-images.githubusercontent.com/58445878/104137056-c585e700-5378-11eb-8417-a65893377e3c.jpg" width="420" />
+  <img src="https://user-images.githubusercontent.com/58445878/104131503-75e1f400-5355-11eb-9c12-7d7d173e04dd.jpg" width="410" /> 
+  <img src="https://user-images.githubusercontent.com/58445878/104137056-c585e700-5378-11eb-8417-a65893377e3c.jpg" width="410" />
 </p>
 
 

@@ -49,7 +49,7 @@ After that, we trained SOM maps with the encoded imagens. The plots below are fr
 
 <img src="https://user-images.githubusercontent.com/58445878/104131503-75e1f400-5355-11eb-9c12-7d7d173e04dd.jpg" width="500"/> <img src="https://user-images.githubusercontent.com/58445878/104137056-c585e700-5378-11eb-8417-a65893377e3c.jpg" width="500"/>
 
-As we can see, when comparing the two neuron distance maps above, the second map, representing the SOM trained with the encoded imagens, is better organized. In this second map, the division between the clusters is easier to visualize and the number of clusters better correnponds to the number of known classes.
+As we can see, when comparing the two neuron distance maps above, the second map, representing the SOM trained with the encoded imagens, is better organized. In this second map, the division between the clusters is easier to visualize and the number of clusters better correnponds to the number of known classes (10 classes).
 
 Considering the resultds of the 5 self organizing maps trained, the mean purity was equal to 0.95974 with standar deviation equal to 0.00113. And the Shannon's entropy is equal to 0.16495, with standard deviation equal to 0.00476<br/>
 
